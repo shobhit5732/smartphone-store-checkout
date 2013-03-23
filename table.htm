@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>layout</title>
+    <style>
+        body {
+
+            margin:0;
+            border:0;
+            padding:0;
+            height:100%;
+            max-height:100%;
+            background:#01245c;
+            font-family:arial, verdana, sans-serif;
+            font-size:75%;
+            overflow: hidden;
+
+        }
+
+
+        * html body {
+
+            padding:116px 0 20px 0;
+
+        }
+
+        .header-wrap {
+
+            position:absolute;
+            top:0;
+            height:116px;
+            width:100%;
+        }
+
+        .header-wrap #header{
+
+            margin:0 auto;
+            position:relative;
+
+        }
+
+        #header {
+            background: #666;
+            position:absolute;
+            top:0;
+            left:0;
+            width:1020px;
+            height:116px;
+            text-align:center;
+            padding:0;
+            margin:0;
+
+        }
+
+        * html #header {height:116px;}
+
+
+
+        .container-wrap {
+
+            position:absolute;
+            width:100%;
+            height:auto;
+            margin-top:116px;
+            margin-bottom:20px;
+            top:0;
+            bottom:0;
+        }
+
+        .container-wrap #container {
+
+            margin:0 auto;
+            position:relative;
+            top:0;
+            height:100%;
+        }
+
+        #container {
+
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            position:fixed;
+            top:116px;
+            left:0;
+            bottom:20px;
+            right:0;
+            background:#fff;
+            padding:0;
+            width:1020px;
+
+        }
+
+        * html #container {
+
+            height:100%;
+            width:1020px;
+
+        }
+
+        #container img {margin:0;}
+
+
+        #main {
+            background:#fff;
+            width:790px;
+            height:100%;
+            float:left;  
+            overflow:auto;
+        }
+
+        .main-multi-form {
+            background:#efefef;
+            width:764px;
+            margin:4px;
+            border:1px solid #adadad;
+            vertical-align:top;
+        }
+
+        .main-multi-form-bettype {
+            background:#ddd;
+            height: 50px;
+            margin:8px 8px 0 8px;
+            padding: 14px 0 0 0;
+            text-align:center;
+            vertical-align:top; 
+        }
+
+        .main-multi-form-bettype-extra {
+            background:#dddddd;
+            width:80%;
+            height: 24px;
+            vertical-align:top; 
+            padding:0;
+            margin:0 auto 0 auto;
+            text-align:center;
+        }
+
+        .main-multi-form-events {
+            background:#ddd;
+            margin:8px 8px 8px 8px;
+            padding-top: 5px;
+            text-align:center;
+            vertical-align:top;
+            width: 748px;
+        }
+
+        .main-multi-form-column {
+            background: #efefef;
+            float:left;
+            width:177px;
+            margin: 5px;
+        }
+
+        .main-multi-form-sports{
+            background:#fff;
+            border:1px solid #666;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            font-weight:bold;
+            height: 18px;
+            padding: 3px 0 0 0;
+            text-align:center;
+            vertical-align:top;
+            width:175px;
+        }
+
+        .main-multi-form-leagues{
+            padding: 0;
+            text-align:left;
+            vertical-align:top;
+            width:177px;
+            height:20px;
+
+        }
+
+        .main-multi-form-leagues-checkbox{
+            float:left;
+            margin: 0;
+            padding: 0;
+            vertical-align:top;
+            width:20px; 
+        }
+
+        .main-multi-form-leagues-league{
+            float:right;
+            margin: 0;
+            padding: 0;
+            vertical-align:top;
+            width:157px;
+            height:20px;    
+        }
+
+        .main-multi-form-leagues-league a,a:Hover,a:Visited{
+            color: #369;
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            font-weight:bold;
+            text-decoration:none;
+        }
+
+        #right {
+
+            width:228px;
+            height:100%;
+            float:right;  
+            border-left:1px solid #73a2bd;
+            border-right:1px solid #73a2bd;
+            text-align:center;
+        }
+
+
+        .footer-wrap{
+            position:absolute;
+            bottom:0;
+            height:20px;
+            width:100%;
+
+        }
+
+        .footer-wrap #footer{
+
+            position:relative;
+            margin:0 auto;
+        } 
+
+        #footer {
+          background: #666;
+          position:absolute;
+          bottom:0;
+          left:0;
+          width:1020px;
+          height:19px;
+          overflow:auto;
+          text-align:center;
+          border-top:1px solid #35759a;
+
+        }
+
+        * html #footer {height:20px;}
+
+        #footer p {
+
+          color:#fff;
+          font-size:1em;
+          margin:2px 0 0 0;
+
+        }
+
+        form {
+            margin:0;
+            padding:0;
+        }
+
+        select {
+
+            font-family: Arial,sans-serif;
+            font-size:1em;
+            color:#000000;
+            margin:0;
+            padding:0;
+            vertical-align:top;
+            font-size: 1em;
+        }
+
+        input {
+
+            font-family: Arial,sans-serif;
+            font-size:1em;
+            color:#000000;
+            margin:0;
+            padding:0;
+            vertical-align:top;
+            font-size: 1em;
+        }
+
+
+        hr
+        {
+            width:100%;
+            color: #000000;
+            height: 1px;
+        }
+</style>
+
+</head>
+
+<body>
+
+<div class="header-wrap">  
+
+    <div id="header">
+
+        HEADER
+
+    </div>
+
+</div>
+
+<div class="container-wrap">
+
+    <div id="container">
+
+        <div id="main">
+
+
+            <div class="main-multi-form">
+
+
+
+                            <div class="main-multi-form-bettype">
+
+                                    TOP MAIN
+
+                            </div>
+
+
+                            <div class="main-multi-form-events">
+
+
+                                    <div class="main-multi-form-column">
+
+
+                                            <div class="main-multi-form-sports">Column 1
+  										<div form action="demo_form.asp"><br>
+											
+  Birthday:<br> <input type="date" name="bday" required="required">
+  </form>
+</div><br>
+
+
+<div class="required">
+
+                <label for="username">Username:</label>
+
+                <input type="text" required x-moz-errormessage="Enter Username" name="username" id="username" class="inputText" size="10" maxlength="128" value="" />
+
+            </div>
+
+ 
+
+            <div class="required">
+
+                <label for="first_name">First Name:</label>
+
+                <input type="text" required x-moz-errormessage="Enter First Name" name="first_name" id="first_name" class="inputText" size="10" maxlength="128" value="" />
+
+            </div>
+
+ 
+
+            <div class="required">
+
+                <label for="last_name">Last Name:</label>
+
+                <input type="text" required x-moz-errormessage="Enter Second Name" name="last_name" id="last_name" class="inputText" size="10" maxlength="128" value="" />
+
+            </div> 
+			<div class="required">
+
+               <label for="email">Email:</label>
+
+                <input type='email' required pattern=".*@gmail\.com" x-moz-errormessage="Enter your email (gmail.com)" name="email" id="email" class="inputText" size="10" maxlength="128" value="" />
+
+            </div>
+
+ 
+
+            <div class="required">
+
+                <label for="password">Password</label><input type='password' id='p1'><br /><br />
+
+                <label for="password">Confirm Password</label><input type='password' onfocus="validatePass(document.getElementById('p1'), this);" oninput="validatePass(document.getElementById('p1'), this);">
+
+            </div>
+ 
+
+            
+
+
+											
+											
+											</div>
+											
+											</div>
+											
+
+
+                                            
+
+                                    </div>
+
+                                    <div class="main-multi-form-column">
+
+
+                                            <div class="main-multi-form-sports">Column 2</div>
+
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+												
+												<div>
+												<form action="" autocomplete="off">
+
+<label for="username">Username</label>
+
+<input id="username" name="username" pattern="[a-zA-Z0-9]{5,}" title="Minimum 5 letters or numbers." required>
+
+ 
+
+<label for="password">Password</label>
+
+<input id="password" name="password" type="password" pattern=".{5,}" title="Minmimum 5 letters or numbers." required>
+
+<p/>
+
+<input type="submit" class="btn" value="Login">
+
+ 
+
+</form>
+</div>
+
+                                                        
+                                                </div>
+                                                
+
+                                            </div>
+
+                                            
+
+                                          
+
+                                    </div>
+
+                                    <div class="main-multi-form-column">
+
+
+                                            <div class="main-multi-form-sports">Column 3</div>
+
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                           <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                    </div>
+
+                                    <div class="main-multi-form-column">
+
+
+                                            <div class="main-multi-form-sports">Column 4</div>
+
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                            <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                           <div class="main-multi-form-leagues">
+
+                                                <div class="main-multi-form-leagues-checkbox">
+
+                                                        <input class="Selection-Checkbox" type="checkbox" name="checkbox">
+
+                                                </div>
+                                                <div class="main-multi-form-leagues-league"><a href="#">CHECKBOX</a></div>
+
+                                            </div>
+
+                                    </div>
+
+                            </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="right">
+            <br /><br />
+            RIGHT
+			
+			<iframe src="demo_iframe.htm" width="200" height="200">
+
+
+</iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer-wrap">
+
+    <div id="footer">FOOTER</div>
+
+</div>
+
+
+</body>
+
+</html>
