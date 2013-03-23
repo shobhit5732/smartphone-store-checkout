@@ -8,27 +8,30 @@ function validateForm()
 {
 var x=document.forms["myForm"]["fname"].value;
 var y=document.forms["myForm"]["lname"].value;
-var z=document.forms["myForm"]["add"].value;
+//var z=document.forms["myForm"]["add"].value;
 
 
 if ((x==null||(x=="")) || (y==null||(y=="")))
   {
   alert("First name must be filled out");
-  return false;
-  document.getElementById("add").disabled=false;
-  
+ return false;  
   }
+ document.getElementById("add").disabled=false;
 }
 </script>
 
 <body>
-<form name="myForm"  onsubmit="return validateForm()" method="post" >
+<form name="myForm"  onsubmit="validateForm()"  >
 First name: <input type="text" name="fname">
 Last name: <input type="text" name="lname">
-Address: <input type="text" name="add" disabled="true">
-
+Address: <input type="text" id="add" disabled=true>
 <input type="submit" value="Submit">
+
+
 </form>
+
+
+
 </body>
 
 </html>
